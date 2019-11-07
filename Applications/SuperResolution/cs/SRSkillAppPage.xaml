@@ -1,0 +1,66 @@
+<Page
+    x:Class="SuperResolutionTestApp_UWP.SRSkillAppPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperResolutionTestApp_UWP"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <ScrollViewer>
+        <StackPanel x:Name="AppStackPanel">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Select execution device:  " FontWeight="Bold" HorizontalAlignment="Left" Margin="0,10,0,10"/>
+                <ComboBox Name="UISkillExecutionDevices" Height="30" Width="200" Margin="20,5,0,0" SelectionChanged="UISkillExecutionDevices_SelectionChanged"/>
+                <Button Name="UICameraToggle"
+                        IsEnabled="false"
+                        Click="UICameraToggle_Click" 
+                        HorizontalAlignment="Center"
+                        ToolTipService.ToolTip="Start Camera"
+                        Content="Start Camera"
+                        Margin="20,0,0,0">
+                </Button>
+                <Button Name="UIButtonFilePick"
+                        IsEnabled="false"
+                        Click="UIButtonFilePick_Click" 
+                        HorizontalAlignment="Center"
+                        ToolTipService.ToolTip="Browse and select image"
+                        Content="Select Image"
+						Margin="20,0,0,0">
+                </Button>
+                <Button Name="UIButtonSwitchOutput"
+                        IsEnabled="false"
+                        Click="UIButtonSwitchOutput_Click" 
+                        HorizontalAlignment="Center"
+                        ToolTipService.ToolTip="Click to enable/disable Super Resolution"
+                        Content="Switch to Linear Scaling"
+						Margin="20,0,0,0">
+                </Button>
+            </StackPanel>
+            <Grid MinWidth ="1280" MinHeight="960" MaxWidth="1280" MaxHeight="960" >
+                <controls:CameraPreview 
+                    Name="UICameraPreview" 
+                    IsFrameSourceGroupButtonVisible="True" 
+                    MinWidth ="1280" 
+                    MinHeight="960" 
+                    MaxWidth="1280" 
+                    MaxHeight="960" 
+                    Canvas.ZIndex="-99" 
+                    Visibility="Collapsed" />
+
+                <Image Name="UIOutputViewer" 
+                       MinWidth ="1280" 
+                       MinHeight="960" 
+                       MaxWidth="1280" 
+                       MaxHeight="960" 
+                       Stretch="Fill" 
+                       Canvas.ZIndex="0" />
+            </Grid>
+            <TextBox Name="UISkillOutputDetails" Text="" IsReadOnly="True" AcceptsReturn="True"/>
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>

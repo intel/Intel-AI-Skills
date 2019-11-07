@@ -1,0 +1,45 @@
+<Page
+    x:Class="IntruderDetectionApp_UWP.IDSkillAppPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IntruderDetectionApp_UWP"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <ScrollViewer>
+        <StackPanel x:Name="AppStackPanel">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Select execution device:  " FontWeight="Bold" HorizontalAlignment="Left" Margin="0,10,0,10"/>
+                <ComboBox Name="UISkillExecutionDevices" Height="30" Width="200" Margin="20,5,0,0" SelectionChanged="UISkillExecutionDevices_SelectionChanged"/>
+                <Button Name="UICameraToggle"
+                        IsEnabled="false"
+                        Click="UICameraToggle_Click" 
+                        HorizontalAlignment="Center"
+                        ToolTipService.ToolTip="Start Camera"
+                        Content="Start Camera"
+						Margin="20,0,0,0">
+                </Button>
+            </StackPanel>
+            <Grid MinWidth ="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" >
+                <controls:CameraPreview 
+                    Name="UICameraPreview" 
+                    IsFrameSourceGroupButtonVisible="True" 
+                    MinWidth ="1280" 
+                    MinHeight="720" 
+                    MaxWidth="1280" 
+                    MaxHeight="720" 
+                    Canvas.ZIndex="-2" 
+                    Visibility="Collapsed" 
+                    SizeChanged="UIImageViewer_SizeChanged" />
+
+                <Canvas Name="UICanvasOverlay" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.ZIndex="0"/>
+            </Grid>
+            <TextBox Name="UISkillOutputDetails" Text="" IsReadOnly="True" AcceptsReturn="True"/>
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>

@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundBlurTestApp_UWP", "BackgroundBlur\cs\BackgroundBlurTestApp_UWP.csproj", "{F935E270-5659-4711-A70E-B1D000AE0F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundReplacementTestApp_UWP", "BackgroundReplacement\cs\BackgroundReplacementTestApp_UWP.csproj", "{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetectionTestApp_UWP", "FaceDetection\cs\FaceDetectionTestApp_UWP.csproj", "{B63872AC-247C-4EB9-93F7-E080D81FE14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntruderDetectionTestApp_UWP", "IntruderDetection\cs\IntruderDetectionTestApp_UWP.csproj", "{67F88C56-3C72-44F9-8CFC-3CDB83461B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDetectionTestApp_UWP", "PersonDetection\cs\PersonDetectionTestApp_UWP.csproj", "{3653467A-6688-4E30-AF72-E07556BDD6F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperResolutionTestApp_UWP", "SuperResolution\cs\SuperResolutionTestApp_UWP.csproj", "{3F682D03-C7CF-4E02-A095-43CBF8770C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperResolutionWinMLTestApp_UWP", "SuperResolutionWinML\cs\SuperResolutionWinMLTestApp_UWP.csproj", "{95D8833F-85CB-47D6-B92B-883D18F60814}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Debug|x64.ActiveCfg = Debug|x64
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Debug|x64.Build.0 = Debug|x64
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Debug|x64.Deploy.0 = Debug|x64
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Release|x64.ActiveCfg = Release|x64
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Release|x64.Build.0 = Release|x64
+		{F935E270-5659-4711-A70E-B1D000AE0F23}.Release|x64.Deploy.0 = Release|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Debug|x64.ActiveCfg = Debug|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Debug|x64.Build.0 = Debug|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Debug|x64.Deploy.0 = Debug|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Release|x64.ActiveCfg = Release|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Release|x64.Build.0 = Release|x64
+		{52152111-5974-4AA4-9DF3-5B2FFA7F2ACC}.Release|x64.Deploy.0 = Release|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Debug|x64.ActiveCfg = Debug|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Debug|x64.Build.0 = Debug|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Debug|x64.Deploy.0 = Debug|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Release|x64.ActiveCfg = Release|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Release|x64.Build.0 = Release|x64
+		{B63872AC-247C-4EB9-93F7-E080D81FE14E}.Release|x64.Deploy.0 = Release|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Debug|x64.ActiveCfg = Debug|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Debug|x64.Build.0 = Debug|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Debug|x64.Deploy.0 = Debug|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Release|x64.ActiveCfg = Release|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Release|x64.Build.0 = Release|x64
+		{67F88C56-3C72-44F9-8CFC-3CDB83461B36}.Release|x64.Deploy.0 = Release|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Debug|x64.ActiveCfg = Debug|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Debug|x64.Build.0 = Debug|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Debug|x64.Deploy.0 = Debug|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Release|x64.ActiveCfg = Release|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Release|x64.Build.0 = Release|x64
+		{3653467A-6688-4E30-AF72-E07556BDD6F0}.Release|x64.Deploy.0 = Release|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Debug|x64.ActiveCfg = Debug|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Debug|x64.Build.0 = Debug|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Debug|x64.Deploy.0 = Debug|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Release|x64.ActiveCfg = Release|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Release|x64.Build.0 = Release|x64
+		{3F682D03-C7CF-4E02-A095-43CBF8770C6B}.Release|x64.Deploy.0 = Release|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Debug|x64.ActiveCfg = Debug|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Debug|x64.Build.0 = Debug|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Debug|x64.Deploy.0 = Debug|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Release|x64.ActiveCfg = Release|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Release|x64.Build.0 = Release|x64
+		{95D8833F-85CB-47D6-B92B-883D18F60814}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DBED965-ECB7-4EC7-87DE-B8E3AD6F3802}
+	EndGlobalSection
+EndGlobal
